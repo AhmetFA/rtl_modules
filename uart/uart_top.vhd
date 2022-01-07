@@ -8,7 +8,7 @@
 --no_of_sample 		Number of samples taken during one baud time integer constant (16)
 --Input Ports
 --clk 				100 MHz Clock
---sw(2:0) 			3 bits switch bus connected to the switches on the board
+--sw(2:0) 			3 bits switch bus connected to the switches on the board for baudrate selection
 --rx_din 			UART RX input pin
 --tx_data(7:0) 		UART TX 8 bits sent data
 --tx_send 			UART transmitter send pulse
