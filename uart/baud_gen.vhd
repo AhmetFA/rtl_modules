@@ -28,11 +28,11 @@ process(clock,rx_active,tx_active)
 begin
 
 baud_switch : case sw is
- when "000"  => baud_number <= 651;
- when "001"  => baud_number <= 325;
- when "010"  => baud_number <= 163;
- when "011"  => baud_number <= 109;
- when "100"  => baud_number <= 54;
+ when "000"  => baud_number <= 651; -- 9600 baudrate
+ when "001"  => baud_number <= 325; -- 19200 baudrate
+ when "010"  => baud_number <= 163; -- 38400 baudrate
+ when "011"  => baud_number <= 109; -- 57600 baudrate
+ when "100"  => baud_number <= 54;  -- 115200 baudrate
  when others => baud_number <= 651;
 end case; 
 
